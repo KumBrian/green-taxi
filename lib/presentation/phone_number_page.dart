@@ -31,19 +31,30 @@ class _PhoneNumberPageState extends State<PhoneNumberPage> {
                 decoration: const BoxDecoration(
                   color: Colors.green,
                 ),
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  spacing: 20,
+                child: Stack(
                   children: [
                     Image.asset(
-                      'assets/logo/logo.png',
-                      width: 100,
-                      height: 100,
+                      'assets/ui_elements/leaf.png',
+                      fit: BoxFit.cover,
                     ),
-                    Image.asset(
-                      'assets/logo/name.png',
-                      width: 150,
+                    Align(
+                      alignment: Alignment.center,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        spacing: 20,
+                        children: [
+                          Image.asset(
+                            'assets/logo/logo.png',
+                            width: 100,
+                            height: 100,
+                          ),
+                          Image.asset(
+                            'assets/logo/name.png',
+                            width: 150,
+                          ),
+                        ],
+                      ),
                     ),
                   ],
                 ),
